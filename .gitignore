@@ -1,2 +1,38 @@
+# Created by https://www.gitignore.io/api/python,vagrant
+# Edit at https://www.gitignore.io/?templates=python,vagrant
 
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Database
+# db.sqlite3
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# requirements.txt
+
+# Files (uncomment when in production)
+#media/photos/
+
+# Dummy Files
 .DS_Store
+.idea/
+# App File
+#app.sock
+#reimi.ppk
+#.idea/pallet_shop_project.iml
+#.idea/misc.xml
+#.idea/deployment.xml
