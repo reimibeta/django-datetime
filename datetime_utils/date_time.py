@@ -2,11 +2,17 @@ from datetime import datetime
 
 
 class DateTime:
+    # The ellipsis ... means as many : as needed.
+    # config (date) & (time)
+    config = None
 
-    @staticmethod
-    def datetimenow():
-        return datetime.now()
+    def __init__(self, config):
+        self.config = config
 
-    @staticmethod
-    def datenow():
-        return datetime.today().date()
+    def now(self):
+        if not self.config:
+            raise ValueError("Config must not none")
+        if self.config == "date":
+            return datetime.today().date()
+        elif self.config == "datetime":
+            return datetime.now()
