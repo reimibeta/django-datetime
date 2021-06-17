@@ -3,6 +3,8 @@
 import datetime
 from django.db import migrations, models
 
+from django_datetime.date_time import datetime
+
 
 class Migration(migrations.Migration):
 
@@ -16,7 +18,7 @@ class Migration(migrations.Migration):
             name='Example',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('date', models.DateField(default=datetime.date(2021, 6, 17))),
+                ('date', models.DateField(default=datetime.dnow())),
             ],
         ),
     ]

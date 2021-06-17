@@ -1,10 +1,10 @@
 from django.db import models
 
-from date_time_utils.date_time import DateTime
+from django_datetime.date_time import datetime
 
 
 class Example(models.Model):
-    date = models.DateField(default=DateTime('date').now)
+    date = models.DateField(default=datetime.dnow())
 
     def __str__(self):
         return "Date: {}".format(self.date)
