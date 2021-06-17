@@ -10,6 +10,6 @@ import setuptools
 
 setuptools.setup(
     name='date_time_utils',
-    version='1.0.2',
+    version='1.0.3',
     packages=setuptools.find_packages()
 )
