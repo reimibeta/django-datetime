@@ -3,7 +3,7 @@
 import datetime
 from django.db import migrations, models
 
-from django_datetime.date_time import datetime
+from django_datetime.datetime import datetime
 
 
 class Migration(migrations.Migration):
