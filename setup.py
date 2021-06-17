@@ -10,6 +10,6 @@ import setuptools
 
 setuptools.setup(
     name='django_datetime',
-    version='1.0.4',
+    version='1.0.5',
     packages=setuptools.find_packages()
 )
