@@ -1,6 +1,6 @@
-from datetime import datetime
-
-_t = datetime
+# from datetime import datetime
+from django.utils import timezone
+_t = timezone
 
 
 class DateTime:
@@ -8,7 +8,7 @@ class DateTime:
 
     @classmethod
     def dnow(cls):
-        return _t.today().date
+        return _t.datetime.now
 
     """ datetime now """
 

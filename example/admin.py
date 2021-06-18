@@ -4,8 +4,8 @@ from example.models import Example
 
 
 class ExampleAdmin(admin.ModelAdmin):
-    list_display = ['id', 'date', ]
-    list_display_links = ['date', ]
+    list_display = ['id', 'date', 'datetime']
+    list_display_links = ['date', 'datetime']
     list_per_page = 25
 
 
